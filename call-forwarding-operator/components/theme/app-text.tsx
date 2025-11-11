@@ -1,10 +1,12 @@
 import {StyleSheet, Text, TextProps} from "react-native";
 import {useThemeColor} from "@/app-example/hooks/use-theme-color";
+import {Href} from "expo-router";
 
 export type ThemedTextProps = TextProps & {
 	lightColor?: string;
 	darkColor?: string;
 	type?: 'default' | 'title' | 'defaultSemiBold' | 'subtitle' | 'link';
+	link?: Href
 };
 
 export function AppText({

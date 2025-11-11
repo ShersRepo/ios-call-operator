@@ -2,6 +2,7 @@ import {ReactNode} from "react";
 import {StyleSheet} from "react-native";
 import {ViewContainer} from "@/components/theme/view-container";
 import {AppText} from "@/components/theme/app-text";
+import {Link} from "expo-router";
 
 export default function UserSetup(): ReactNode {
 	const styles = StyleSheet.create({
@@ -23,7 +24,7 @@ export default function UserSetup(): ReactNode {
 
 				<AppText>Please sign in to get started</AppText>
 
-				<AppText type={"link"}>Or click here to create an account</AppText>
+				<AppText>Or <Link href={"/(menu)/user-sign-in"}>click here to create an account</Link></AppText>
 			</ViewContainer>
 		</ViewContainer>
 	);

@@ -20,10 +20,19 @@ export default function HomeScreen() {
 				headerShown: false,
 				tabBarButton: HapticTab,
 			}}>
+
 			<Tabs.Screen
 				name="index"
 				options={{
 					title: 'Home',
+					tabBarIcon: HomeButton,
+				}}
+			/>
+
+			<Tabs.Screen
+				name="help"
+				options={{
+					title: 'Help',
 					tabBarIcon: HomeButton,
 				}}
 			/>
